@@ -1,0 +1,22 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background: #f6f6f6;  
+}
+
+header {
+    background: #008489;
+    height: 66px;
+}
+
+header .logo {
+    float: left;
+}
+
+header ul {
+    float: right;
+}
+
+header .menu-toggle {
+    display: none;
+}
