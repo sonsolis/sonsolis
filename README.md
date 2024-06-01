@@ -38,3 +38,4 @@ Git Commit Protocol
 
 New Branch -> Commit -> Push -> Compare -> Pull Request -> Merge
 
+Still working at getting this protocol.
