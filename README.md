@@ -37,5 +37,3 @@ a seperate branch so as to avoid commiting changes directly to the main branch. 
 Git Commit Protocol
 
 New Branch -> Commit -> Push -> Compare -> Pull Request -> Merge
-
-Still working at getting this protocol.
