@@ -1,1 +1,3 @@
-sonsolis.com
+Host: www
+Type: CNAME
+Value: sonsolis.com
