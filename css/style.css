@@ -137,7 +137,7 @@ aside h1+p {
 
 .Bio {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 20px;
     left: 100px;
     background-color: rgba(255, 255, 255, 0.8);
@@ -147,7 +147,7 @@ aside h1+p {
 
 .Intro {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 480px;
     right: 50px;
     background-color:rgb(212, 212, 212);
@@ -157,7 +157,7 @@ aside h1+p {
 
 .Projects {
     position : absolute;
-    z-index: 1;
+    z-index: 2;
     top: 120px;
     left: 100px;
     background-color: rgba(225, 225, 225, 0.8);
