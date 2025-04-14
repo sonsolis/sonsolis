@@ -165,6 +165,36 @@ aside h1+p {
     border-radius: 5px;
 }
 
+.Links {
+   position: absolute;
+   z-index: 2;
+   top: 380px;
+   left: 100px;
+   background-color: rgba(225, 225, 225, 0.8);
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.Links table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 20px;
+}
+
+.Links th, td {
+   border: 1px solid #ccc;
+   padding: 10px;
+   text-align: left;
+}
+
+.Links thead {
+   background-color: #f4f4f4;
+}
+
+.Links tbody tr:hover {
+   background-color: #eef;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 750px) {
     header {
