@@ -19,6 +19,25 @@ a {
    text-decoration: none;
 }
 
+.clearfix::after {
+   content: '';
+   display: block;
+   clear: both;
+}
+
+.btn {
+   padding: .5rem 1rem;
+   background: #006669;
+   color: white;
+   border 1px solid transparent;
+   border-radius: .25rem;
+}
+
+.btn:hover {
+   color: white !important;
+   background: #005255;
+}
+
 header {
     background: #C3682F;
     height: 66px;
@@ -61,6 +80,7 @@ header ul li ul {
     top: 66px;
     right: 0px;
     width: 172px;
+    z-index: 8888;
     display: none;
 }
 
@@ -276,6 +296,7 @@ aside h1+p {
    box-shadow: 1rem 1rem 1rem -1rem #a0a0a033;   
 }
 
+
 .post-slider .post-wrapper .post .post-info {
   height: 1530px;
   width: 100%;
@@ -292,17 +313,80 @@ aside h1+p {
 
 /* POST SLIDER */
 
-/* MEDIA QUERIES */
+/* CONTENT */
+
+.content {
+   width: 90%;
+   margin: 30px auto 30px;
+}
+
+.content .main-content {
+  width: 70%;
+  float: left;
+}
+
+.content .main-content .post {
+  width: 95%;
+  height: 270px;
+  margin: 20px auto;
+  border-radius: 5px;
+  background: white;
+  position: relative;
+}
+
+.content .main-content .post .read-more {
+   position: absolute;
+   bottom: 30px;
+   right: 30px;
+   border: 1px solid #006669;
+   background: transparent;
+   border-radius: 0px;
+   color: #006669 !important;
+}
+
+.content .main-content .post .read-more:hover {
+  background: #006669;
+  color: white !important;
+  transition: .25s;
+}
+
+.content .main-content .post .post-image {
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+
+.content .main-content .post .post-preview {
+  width: 60%;
+  padding: 10px;
+  float: right;
+}
+
+.content .main-content .recent-post-title { 
+  margin: 20px;
+}
+
+.content .sidebar {
+  width: 30%;
+  float: left;
+  border: 1px dashed green;
+  height: 300px;
+}
+
+/* CONTENT */
+
+/* MEDIA QUERIES */ 
 @media only screen and (max-width: 750px) {
-/*
-   .QuantumConcept-img {
-       width: 80%;
-       height: auto;
-       /*
-       max-width: 100vw;
-       opacity: 0.3;
-       position: absolute;
-       z-index: 0;
+       	
+	/* 
+	.QuantumConcept-img {
+       		width: 80%; 
+		height: auto; 
+		/* 
+		max-width: 100vw; 
+		opacity: 0.3; 
+		position: absolute; 
+		z-index: 0;
     }
    */ 
     header {
