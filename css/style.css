@@ -2,10 +2,13 @@
 * {
     box-sizing: border-box;
 }
-body{
+
+html, body{
+    height: 100%;
     padding: 0px;
     margin: 0px;
     background: #f6f6f6;  
+    font-family: 'Lora', serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -136,130 +139,9 @@ header .menu-toggle {
 
 /* Navigation Bar Elements */
 
-/*
-article p{
-    position: relative;
-    left: 700px;
+.page-wrapper {
+   min-height: 50%;
 }
-
-article img{
-    background-position: 100%;
-}
-*/
-
-/*
-aside {
-    width: 50%;
-    margin-top: 25px;
-    background-color: rgb(212, 212, 212);
-    float: center;
-    border: 5px solid rgb(102, 102, 102);
-    border-radius: 15px;
-}
-*/
-/*
-aside h1+p {
-    text-align: center;
-    font-size: 0.8em;
-
-}
-*/
-
-.container {
-    background-image: url('./images/QuantumMaths.jpg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: repeat;
-}
-
-/**
-.QuantumConcept-img {
-    width: 80%;
-    height: auto;
-    /*
-    max-width: 100vw;
-    z-index: 0;
-    position: absolute; } **/
-/*
-.Sun-img {
-    position: absolute;
-    z-index: 1;
-    top: -90px;
-    right: -25px;
-    width: 30%;
-    height: auto;
-}
-*/
-
-/*
-.Bio {
-    position: absolute;
-    z-index: 2;
-    top: 150px;
-    left: 100px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    border-radius: 5px;
-}
-*/
-
-/*
-.Intro {
-    position: absolute;
-    z-index: 2;
-    top: 480px;
-    right: 50px;
-    background-color:rgb(212, 212, 212);
-    padding: 10px;
-    border-radius: 5px;
-}
-*/
-
-/*
-.Projects {
-    position : absolute;
-    z-index: 2;
-    top: 120px;
-    left: 100px;
-    background-color: rgba(225, 225, 225, 0.8);
-    padding: 10px;
-    border-radius: 5px;
-}
-*/
-
-/* Table Properties */
-/*
-.GitLinks {
-   position: absolute;
-   z-index: 2;
-   top: 380px;
-   left: 100px;
-   background-color: rgba(225, 225, 225, 0.8);
-   padding: 10px;
-   border-radius: 5px;
-}
-
-.GitLinks table {
-   width: 100%;
-   border-collapse: collapse;
-   margin-top: 20px;
-}
-
-.GitLinks th, td {
-   border: 1px solid #ccc;
-   padding: 10px;
-   text-align: left;
-}
-
-.GitLinks thead {
-   background-color: #f4f4f4;
-}
-
-.GitLinks tbody tr:hover {
-   background-color: #eef;
-}
-
-*/
 
 .page-wrapper a:hover {
    color: #006669;
@@ -300,7 +182,7 @@ aside h1+p {
 
 .post-slider .post-wrapper .post {
    width: 330px;
-   height: 1330px;
+   height: 330px;
    margin: 0px 10px;
    display: inline-block;
    background: white; 
@@ -310,7 +192,7 @@ aside h1+p {
 
 
 .post-slider .post-wrapper .post .post-info {
-  height: 1530px;
+  height: 130px;
   width: 100%;
   margin: 5px;
   padding: 5px;
@@ -418,17 +300,25 @@ aside h1+p {
   transition: all 0.3s;
 }
 
-/* Footer 
+/* Footer */
+
 .footer {
   background: #303036;
   color: #d3d3d3;
   height: 400px;
+  position: relative;
+}
+
+.footer .footer-content {
+  border: 1px solid red;
+  height: 350px;
 }
 
 .footer .footer-bottom {
   background: #343a40;
   color: #686868;
   height: 50px;
+  width: 100%;
   text-align: center;
   position: absolute;
   bottom: 0px;
@@ -436,22 +326,11 @@ aside h1+p {
   padding-top: 20px;
 }
 
- Footer */
+/* Footer */
 
 /* MEDIA QUERIES */ 
 @media only screen and (max-width: 750px) {
-       	
-	/* 
-	.QuantumConcept-img {
-       		width: 80%; 
-		height: auto; 
-		/* 
-		max-width: 100vw; 
-		opacity: 0.3; 
-		position: absolute; 
-		z-index: 0;
-    }
-   */ 
+
     header {
         position: relative;
     }
