@@ -646,12 +646,12 @@ header .menu-toggle {
     }
 
     .post-slider .next {
-       top: 50%;
+       top: 60%;
        right: 10px;
     }
 
     .post-slider .prev {
-       top: 50%;
+       top: 60%;
        left: 10px;
     }
 
