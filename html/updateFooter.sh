@@ -17,9 +17,11 @@ for file in "$HTML_DIR"/*.html; do
 		numbers[$i]=$(( start_num + i))
 	done
 
+	echo "${numbers[@]}"
+
 	echo "Deleting Line after Quick Links in $file..."
 	for line in "${numbers[@]}"; do
-		sed -i '${line}d' "$file"
+		sed -i "${line}d" "$file"
 	done
 done
 
