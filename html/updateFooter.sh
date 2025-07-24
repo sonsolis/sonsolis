@@ -1,28 +1,27 @@
 #!/bin/bash
 
-HTML_DIR="./"
+HTML_DIR="./navbar"
 
+footer="new_footer.html"
 
+steps=9
 
 for file in "$HTML_DIR"/*.html; do
-	# 1. Get the Starting Line Number
-	start_num=$(grep -n "Quick Links" $file | cut -d: -f1)
+	if grep -q "Footer" $file; then
+		# 1. Get the Starting Line Number
+		line_nums=($(grep -n "Footer" $file | cut -d: -f1))
 
-	# 2. Config
-	steps=8
+		start_num=${line_nums[0]}
+		end_num=${line_nums[1]}
+		echo "Deleting lines $start_num -> $end_num in $file..."
+		sed -i "${start_num},${end_num}d" "$file"
 
-	# 3. Build Array
-	numbers=()
-	for ((i=0; i<$steps; i++)); do
-		numbers[$i]=$(( start_num + i))
-	done
+		end_num=$(($start_num + 35))
+		sed -i "${start_num}r $footer" "$file"
+	else
+		echo "Not in $file."
+	fi
 
-	echo "${numbers[@]}"
-
-	echo "Deleting Line after Quick Links in $file..."
-	for line in "${numbers[@]}"; do
-		sed -i "${line}d" "$file"
-	done
 done
 
 echo "Lines Deleted!"
