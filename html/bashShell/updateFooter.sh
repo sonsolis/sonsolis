@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HTML_DIR="./navbar"
+HTML_DIR="./projects/cvision"
 
 footer="new_footer.html"
 

@@ -268,6 +268,10 @@ header .menu-toggle {
   margin-bottom: 40px;
 }
 
+.content .main-content.single .demo-link {
+  text-decoration: underline;
+}
+
 .content .main-content .post {
   width: 95%;
   height: 270px;
