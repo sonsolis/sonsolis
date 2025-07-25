@@ -2,12 +2,13 @@
 
 HTML_DIR="./roadmaps"
 
-LINE_NUMBER=29
+LINE_NUMBER=28
 
 for file in "$HTML_DIR"/*.html; do
 	echo "Updating line $LINE_NUMBER in $file..."
 
-	sed -i '29d' "$file"
+	sed -i '27c 	<li><a href="../../index.html">Home</a></li>' "$file"
+	
 done
 
-echo "Deleted line 29!"
+echo "Deleted line 28!"
