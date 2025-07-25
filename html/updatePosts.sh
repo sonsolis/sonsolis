@@ -12,7 +12,7 @@ for file in "$HOME_DIR"/*.html; do
 
 	for val in "${end_array[@]}"; do
 		if [[ $val > $start_num ]]; then
-			end_num=($val - 1)
+			end_num=$((val - 1))
 			break
 		fi
 	done
