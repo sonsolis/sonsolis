@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0e22e90dd2.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet"> 
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <title>Web Development - Full Stack Guestbook App - Project Overview</title>
+</head>
+<body>
+    <header>
+        <div class = "logo">
+		<h1 class = "logo-text"><a href="../../../index.html"><span>Son</span>Solis</a></h1>
+        </div>
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class = "nav">
+
+	    <li><a href="../../../index.html">Home</a></li>
+            <li><a href="../../navbar/about.html">About</a></li>
+
+            <!--<li><a href="#">Sign Up</a></li>
+            <li><a href="#">Login</a></li> --> 
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    Mario Solis
+                    <i class="fa fa-chevron-down" style="font-size: .8em;"></i>
+                </a>
+            
+            </li>
+        </ul>
+    </header>
+    
+    <!--  Page Wrapper -->
+    <div class="page-wrapper">   
+	    <!-- Content -->
+	    <div class="content clearfix">
+		<div class="main-content single">
+			<h1 class="post-title">Web Development - Full Stack Guestbook App - Overview</h1>
+
+			<center><img class="post-img" src="../../../images/projects/PHPGuestBook.png" alt=""></center>
+			<div class="post-content">
+				<p></p>
+				<p>In this project I decided to gain a better understanding of web server, app server and database server interactivity. So i created a simple guestbook app running on  a local raspberry pi making use of both a database and app layer.</p>
+
+				<p>I started by setting up an apache server locally on a raspberry pi 4. With it I got familiar with the server by adjusting the files inside of its directory. (/var/www/)</p>
+
+				<p>In there I set up an app server using PHP and also an app server using flask to look at the difference in setup process between the two. In the process creating a framework for the guest app in PHP and a simple test program using flask.</p> 
+
+				<p>PHP Guestbook App  Repo Link: <a href="https://github.com/sonsolis/guestbookphpapp" target="__blank" class="demo-link"> PHP Guestbook App </a></p>
+
+			
+				<p>Flask Test App Repo Link: <a href="https://github.com/sonsolis/guestbookphpapp" target="__blank" class="demo-link"> FLask Test App</a></p>
+
+				<p>With the app layer setup and offering a guestbook interface that collects a name and message followed by the entries collected so far as the main elements of the page. I went on to setup a database server using MariaDB, and configured it to collect and store the information gathered on the app layer in to a table all on the same raspberry pi.</p>
+
+				<p>I decided to tinker a step further, separating the app and web layer from the the database using a raspberry pi 5 for my database server and began building an understanding of what cloud computing offers. Ultimately ending the project after familiarising myself with the access and error logs for the web server. (/var/log/apach2), setting up info logs for the PHP server using phpinfo.php and logs for the database server using SET GLOBAL general_log = 'ON'.</p>
+
+				<p>This project gave a practical understanding of back-end engineering, server interactivity between a full-stack app as well as what cloud computing is offering to its users when separating a websites database from the machine running its web server and app server. It increases the overall security of the database which is critical to the privacy of any given organisation.</p>
+
+				<p></p>
+				<p></p>
+				<p></p>
+			</div>
+		</div>
+
+		<!-- Sidebar -->
+		<div class="sidebar single">
+			<div class="section popular">
+				<h2 class="section-title">Projects</h2>
+				<div class="post clearfix">
+					<img src="../../../images/roadmaps/Computer_Vision_Roadmap.jpg" alt="">
+					<a href="./advanced-gesture-control-interface.html" class="title"><h4>Advanced Gesture Control Interface - Outline</h4></a>
+				</div>
+			</div>
+			<div class="section topics">
+				<h2 class="section-title">Topics</h2>
+				<ul>
+					<li><a href="#">Quotes</a></li>
+					<li><a href="#">Motivation</a></li>
+					<li><a href="#">Inspiration</a></li>
+					<li><a href="#">Projects</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- Sidebar -->
+	    </div>
+	   <!-- Content -->
+    </div>
+    <!-- Page Wrapper // -->
+
+    
+    <!-- Footer  -->
+    <div class="footer">
+	<div class="footer-content">
+		<div class="footer-section about">
+			<h1 class="logo-text"><span>Son</span>Solis</h1>
+			<p>
+				SonSolis is a sight dedicated to the study of computer science, mathematics and physics. It is centred around various sub fields of computer science, particularly computer vision, machine learning, data science, embedded programming and web development. 
+			</p>
+			<div class="contact">
+			</div>
+			<br/>
+			<div class="socials">
+				<a href="https://github.com/sonsolis"><i class="fab fa-github" target="__blank"></i></a>
+				<a href="https://linkedin.com/in/mario-solis-97140b1a9" target="__blank"><i class="fab fa-linkedin"></i></a>
+			</div>
+		</div>
+		<div class="footer-section links">
+			<img src="../../../images/unknown_Sun.png" alt="" class="footer-image">
+		</div>
+		<div class="footer-section contact-form">
+			<h2>In Progress</h2>
+			<ul>
+				<a href="https://www.youtube.com/watch?v=fPYOhQn95fw&list=PL3pyLl-dgiqD0eKYJ-XSxrHaRh-zsA2tP" target="__blank"><li>PHP/SQL Series</li></a>
+				<a href="https://www.youtube.com/watch?v=pCQQaeC9WRE&list=PLfFghEzKVmjvzS4DILijsdQk27Ew7xIPu" target="__blank"><li>SVM from Scratch</li></a>
+				<a href="https://www.youtube.com/watch?v=8hly31xKli0" target="__blank"><li>Data Structures Review</li></a>
+				<a href="https://www.youtube.com/watch?v=bvn_HYpix6s" target="__blank"><li>React Native Project</li></a>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer-bottom">
+		&copy; sonsolis.com | Designed by Mario Solis
+	</div>
+    </div>
+    <!-- Footer -->
+    <!-- JQuery -->
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js></script>
+
+    <!-- Slick Carousel -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Custom Script -->
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
+
